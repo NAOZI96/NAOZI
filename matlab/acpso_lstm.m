@@ -16,8 +16,6 @@ ub = [100, 0.01, 500];          % upper bounds
 
 nDim = numel(lb);
 
-nDim = numel(lb);
-
 % Initialize swarm
 rng('default');
 X = rand(nParticles, nDim);           % normalized positions

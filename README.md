@@ -6,8 +6,8 @@ implementation is located in `matlab/acpso_lstm.m`.
 
 ## Usage
 
-1. Prepare a data file (e.g. `data.xlsx`) compatible with your LSTM
-   training function `runLSTM`.
+1. Prepare a data file (e.g. `data.xlsx`) containing a single-column
+   time series compatible with `runLSTM`.
 2. Edit the configuration at the top of `acpso_lstm.m` to point to your
    data file and adjust particle/iteration settings if needed.
 3. From MATLAB, run the script:

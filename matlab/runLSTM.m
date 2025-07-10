@@ -12,6 +12,8 @@ maxEpochs = round(params(3));
 
 %% 2. Load data
 raw = xlsread(filename);
+% ensure column vector for univariate time series
+raw = raw(:);
 numSamples = numel(raw);
 kim = 15;   % delay steps
 zim = 1;    % predict zim time steps ahead
