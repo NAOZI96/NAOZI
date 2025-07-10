@@ -17,6 +17,7 @@ implementation is located in `matlab/acpso_lstm.m`.
 The function will return the best hyperparameters and display the
 convergence curve.
 
-`runLSTM` must be available on the MATLAB path and accept a parameter
-vector and filename as input. It should return the RMSE used as the
-fitness value for the optimizer.
+An example implementation of `runLSTM` is provided in
+`matlab/runLSTM.m`.  The optimizer expects this function to accept a
+parameter vector and a filename and to return the RMSE on the test set
+used as the fitness value.
