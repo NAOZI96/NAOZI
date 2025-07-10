@@ -67,16 +67,12 @@ end
 for iter = 1:maxIter
     w = w_max - (w_max - w_min) * iter / maxIter;
 
-    fitness_all = zeros(nParticles, 1);
     gbest_candidates = zeros(nParticles, nDim);
     gbest_fit_candidates = inf(nParticles, 1);
 
     parfor i = 1:nParticles
         params_real = lb + X(i,:) .* (ub - lb);
         [fitness, ~, ~] = runLSTM(params_real, filename);
-
-        fitness_all(i) = fitness;
-
         if fitness < pbest_fitness(i)
             pbest(i,:) = X(i,:);
             pbest_fitness(i) = fitness;
