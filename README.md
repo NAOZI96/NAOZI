@@ -8,6 +8,9 @@ implementation is located in `matlab/acpso_lstm.m`.
 
 1. Prepare a data file (e.g. `data.xlsx`) compatible with your LSTM
    training function `runLSTM`.
+   The helper `runLSTM` provided in this repository loads the Excel data
+   with `readmatrix`, so each column is interpreted as a variable and the
+   last column as the prediction target.
 2. From MATLAB, call the function:
 
 ```matlab
