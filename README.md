@@ -3,6 +3,8 @@
 This repository contains example code for optimizing LSTM hyperparameters
 using Adaptive Constrained Particle Swarm Optimization (ACPSO).  The MATLAB
 implementation is located in `matlab/acpso_lstm.m`.
+Chinese translations have been added to the MATLAB comments for clarity.
+Both `acpso_lstm.m` and `runLSTM.m` contain bilingual remarks.
 
 ## Usage
 
